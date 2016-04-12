@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href='https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900' rel='stylesheet' type='text/css'>
+<title>Stopwatch</title>
+<style type="text/css">
+html {
+  background: #333;
+  font-family: Menlo;
+}
+.controls {
+  text-align: center;
+  width: 100%;
+  word-spacing: 2em;
+  margin-bottom:10px;
+}
+
+.reverse
+{
+  color: #ffffff;
+	font-size:30px;
+	}
+.forward
+{
+	color:#ffffff;
+	font-size:30px;
+	}
+
+.button {
+  color: lime;
+  font-size: 2em;
+  text-decoration: none;
+  text-shadow: 0 0 1em lime;
+}
+ .inputs {
+    height: 25px;
+    border: 3px solid #EBE6E2;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    width: 200px;
+}
+
+.inputs:focus {
+    border-color: #BBB;
+    outline: none;
+	color:#6F6C6C;
+}
+
+</style>
+</head>
+
+<body>
+<div align="center">
+<div><div class="forward" style="font-family: 'Orbitron', sans-serif;"><time1>00:00:00:00</time1></div></div>
+<div>
+	<div class="reverse" style="font-family: 'Orbitron', sans-serif;"><time2>00:00:00:00</time2></div>
+    
+    <div class="controls">
+		<a href="#" class="button" id="startr" onClick="startr();">Start</a><br>
+		<a href="#" class="button" id="stopr">Stop</a><br>
+		<a href="#" class="button" id="clearr" style="display:none;" onClick="clearr">Reset</a>
+     </div>
+</div>
+<div>
+    <input type="text" id="userInput" class="inputs" style="text-align:center;" placeholder="Enter Seconds here" /> 
+    <br><br>
+    <a href="#" class="button" id="othername" onClick="othername();">Set Value</a>
+</div>
+</div>
+<script src="js/index2.js"></script>
+</body>
+
+</html>
